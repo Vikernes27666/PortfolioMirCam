@@ -1,0 +1,120 @@
+/* Estilos generales */
+body {
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+/* Estilos para el contenedor principal */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.contact-icons a {
+    margin-right: 10px;
+}
+
+.contact-icons img {
+    width: 30px;
+}
+
+/* Estilos para el contenedor de los dos sub-contenedores */
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+/* Estilos para los contenedores izquierdo y derecho */
+.left-container, .right-container {
+    width: calc(50% - 40px);
+    padding: 15px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    overflow-y: auto;
+    max-height: calc(100vh - 160px);
+}
+
+/* Estilos para los proyectos */
+.project-box {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.project-box img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.project-info {
+    margin-bottom: 10px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Media queries para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+    
+    .content-container {
+        flex-direction: column;
+    }
+    
+    .left-container, .right-container {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .project-box {
+        width: 90%;
+    }
+}
