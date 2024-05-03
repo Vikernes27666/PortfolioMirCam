@@ -108,6 +108,10 @@ footer {
     border-radius: 10px;
 }
 
+footer .copyright-link {
+    color: white; 
+}
+
 /* Media queries para dispositivos móviles */
 @media screen and (max-width: 768px) {
     .container {
