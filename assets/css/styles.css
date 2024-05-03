@@ -80,23 +80,23 @@ header {
 /* Estilos para los proyectos */
 .project-box {
     display: flex;
-    flex-direction: column;
+    align-items: center; 
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 20px;
 }
 
-.project-box img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    margin-bottom: 10px;
+.project-icon {
+    font-size: 62px;
+    margin-right: 10px;
 }
 
 .project-info {
     margin-bottom: 10px;
+    padding-left: 10px; 
 }
+
 
 /* Estilos para el pie de página */
 footer {
@@ -131,4 +131,3 @@ footer .copyright-link {
         width: 90%;
     }
 }
-
