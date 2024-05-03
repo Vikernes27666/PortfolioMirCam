@@ -19,6 +19,12 @@ h2 {
     font-weight: bold;
 }
 
+/* Estilos para los iconos de contacto */
+.contact-icons a {
+    color: white; 
+    margin-right: 10px; 
+}
+
 /* Estilos para el contenedor principal */
 .main-container {
     display: flex;
