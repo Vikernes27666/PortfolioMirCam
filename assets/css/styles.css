@@ -12,7 +12,9 @@ body {
     padding: 20px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: normal;
 }
 
@@ -22,8 +24,8 @@ h2 {
 
 /* Estilos para los iconos de contacto */
 .contact-icons a {
-    color: white; 
-    margin-right: 10px; 
+    color: white;
+    margin-right: 10px;
 }
 
 /* Estilos para el contenedor principal */
@@ -58,6 +60,21 @@ header {
     width: 30px;
 }
 
+/* Estilos para menu */
+.menu_container {
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.menu_container .navbar-nav .nav-link {
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
 /* Estilos para el contenedor de los dos sub-contenedores */
 .content-container {
     display: flex;
@@ -66,21 +83,22 @@ header {
 }
 
 /* Estilos para los contenedores izquierdo y derecho */
-.left-container, .right-container {
-    flex: 1; 
+.left-container,
+.right-container {
+    flex: 1;
     padding: 15px;
     border: 2px solid #000;
     border-radius: 10px;
     overflow-y: auto;
     max-height: calc(100vh - 160px);
-    margin: 0 10px; 
+    margin: 0 10px;
 }
 
 
 /* Estilos para los proyectos */
 .project-box {
     display: flex;
-    align-items: center; 
+    align-items: center;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -94,7 +112,7 @@ header {
 
 .project-info {
     margin-bottom: 10px;
-    padding-left: 10px; 
+    padding-left: 10px;
 }
 
 
@@ -109,7 +127,23 @@ footer {
 }
 
 footer .copyright-link {
-    color: white; 
+    color: white;
+}
+
+/* Estilos para modo oscuro */
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode .contact-icons a {
+    color: white;
+}
+
+.dark-mode .project-box {
+    border-color: #888;
+    background-color: #444;
+    color: white;
 }
 
 /* Media queries para dispositivos móviles */
@@ -117,12 +151,13 @@ footer .copyright-link {
     .container {
         max-width: 90%;
     }
-    
+
     .content-container {
         flex-direction: column;
     }
-    
-    .left-container, .right-container {
+
+    .left-container,
+    .right-container {
         /*width: 90%;*/
         margin-bottom: 10px;
     }
