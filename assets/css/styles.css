@@ -97,7 +97,7 @@ header {
 
 /* Estilos para los proyectos */
 .project-box {
-    display: flex;
+    /*display: flex;*/
     align-items: center;
     padding: 10px;
     border: 1px solid #ccc;
