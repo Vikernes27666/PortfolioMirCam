@@ -146,6 +146,11 @@ footer .copyright-link {
     color: white;
 }
 
+.dark-mode .left-container,
+.dark-mode .right-container {
+    border-color: white;
+}
+
 /* Media queries para dispositivos móviles */
 @media screen and (max-width: 768px) {
     .container {
